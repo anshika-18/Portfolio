@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            body{
+                background-color: black;
+            }
+.type-text
+{
+background-color: black;
+  display: grid;
+  grid-template-columns: auto;
+  margin-top: 250px;
+  margin-left: 5vw;
+  height: 200px;
+  border-radius: 2vw;
+}
+
+.dynamic-txts{
+  margin-left: 25px;
+  overflow: hidden;
+  color: lawngreen;
+  font-size: 100px;
+  font-weight: 500;
+}
+
+.dynamic-txts  div{
+  position: relative;
+  margin: 5px 0;
+}
+.dynamic-txts  div::after
+{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: black;
+  border-left: 20px solid lawngreen;
+  animation: typing 8s steps(10) infinite;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
+
+        </style>
+    </head>
+    <body>  
+        
+            <div class="content">
+                <div class="flex">
+                    <div class="type-text">
+                        <span class="dynamic-txts">
+                            <div>function farewell(Batch of 2k19){</div>
+                            <div>technobyte();</div>
+                          <div>}</div>
+                        </span>
+                    </div>
+                </div>         
+                </div>
+    </body>
+</html>
